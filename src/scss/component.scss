@@ -1,0 +1,14 @@
+@import  './variable.scss';
+
+// header + navBar
+
+@mixin HeaderColorAndCenter {
+    background-color: $blueColor;
+    display: flex;
+    justify-content: center ;
+}
+
+@mixin MaxWidth {
+    width: 100%;
+    max-width: $HeaderMaxWidth;
+}

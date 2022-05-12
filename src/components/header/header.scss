@@ -1,0 +1,58 @@
+@import '../../scss/component.scss';
+
+.header{
+    @include HeaderColorAndCenter;
+    color: white;
+    position: relative;
+}
+
+.headerContainer{
+    @include MaxWidth;
+    margin: 20px 0px 100px 0px;
+}
+
+.headerList{
+    display: flex;
+    gap: 40px;
+}
+
+.headerListItem{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+ 
+    &.active{
+        border: 1px solid white;
+        padding: 10px;
+        border-radius: 20px;
+
+    }
+}
+
+.headerBtn{
+    background-color: #0071c2;
+    color: white;
+    font-weight: 500;
+    border: none;
+    padding: 10px;
+
+}
+
+.headerSearch{
+    height: 30px;
+    background-color: white;
+    border: 3px solid #febb02;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 10px 0px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: -25px;
+    @include MaxWidth;
+
+}
+
+.headerIcon{
+    color: lightgray
+}
