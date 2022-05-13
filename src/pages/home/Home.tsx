@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-      <Header />
+      <Header type= "home"/>
     </div>
   )
 }
